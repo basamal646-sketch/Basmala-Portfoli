@@ -3,59 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بسملة عمرو | Portfolio</title>
+<title>بسملة عمرو | السيرة الذاتية</title>
 <style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fdf7fb;
-  color: #333;
-  text-align: center;
+  background: #f7f5fc;
+  color: #302b3d;
+  line-height: 1.9;
 }
 header {
-  background: #8e5a82;
+  background: linear-gradient(135deg, #39265c, #9066b8);
   color: white;
-  padding: 40px 15px;
+  text-align: center;
+  padding: 65px 20px;
+}
+header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+header p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+nav {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px #ddd;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: #694394;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 18px;
 }
 section {
   background: white;
-  margin: 20px auto;
   padding: 25px;
-  max-width: 650px;
-  border-radius: 15px;
-  box-shadow: 0 3px 12px #ddd;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px #e6dfef;
 }
-h2 { color: #8e5a82; }
-a {
+h2 {
+  color: #70469a;
+  border-bottom: 2px solid #eee5f8;
+  padding-bottom: 8px;
+}
+.hero-button {
   display: inline-block;
-  background: #8e5a82;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
+  background: white;
+  color: #694394;
+  padding: 10px 25px;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: bold;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.skills span {
+  background: #f0e7fa;
+  color: #603a89;
+  padding: 8px 17px;
+  border-radius: 20px;
+}
+.project {
+  background: #faf8fd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #39265c;
+  color: white;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+  }
 }
 </style>
 </head>
 <body>
 <header>
+  <p>السيرة الذاتية | CV</p>
   <h1>أهلاً، أنا بسملة عمرو</h1>
-  <p>طالبة نظم معلومات | مهتمة بالبرمجة وتطوير المواقع</p>
+  <p>طالبة نظم معلومات | قسم النظم والبرمجة</p>
+  <a class="hero-button" href="#about">تعرّف عليّ</a>
 </header>
-<section>
+<nav>
+  <a href="#about">من أنا</a>
+  <a href="#education">التعليم</a>
+  <a href="#skills">مهاراتي</a>
+  <a href="#projects">مشاريعي</a>
+  <a href="#contact">تواصل معي</a>
+</nav>
+<div class="container">
+<section id="about">
   <h2>من أنا؟</h2>
-  <p>أنا طالبة في قسم نظم المعلومات والبرمجة، وأسعى لتطوير مهاراتي وبناء مشاريع برمجية مميزة.</p>
+  <p>
+    أنا بسملة عمرو، طالبة في الفرقة الرابعة بمعهد نظم المعلومات،
+    قسم النظم والبرمجة. مهتمة بتطوير المواقع وتعلم البرمجة،
+    وأسعى لاكتساب خبرات جديدة وتطوير مهاراتي العملية.
+  </p>
 </section>
-<section>
+<section id="education">
+  <h2>التعليم</h2>
+  <h3>معهد نظم المعلومات</h3>
+  <p>القسم: النظم والبرمجة</p>
+  <p>الفرقة الدراسية: الرابعة</p>
+</section>
+<section id="skills">
   <h2>مهاراتي</h2>
-  <p>HTML - CSS - Python - Word - Excel</p>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Python</span>
+    <span>Microsoft Word</span>
+    <span>Microsoft Excel</span>
+    <span>التعلم الذاتي</span>
+  </div>
 </section>
 <section>
+  <h2>نبذة مهنية</h2>
+  <p>
+    أسعى إلى تطوير خبرتي في مجال تكنولوجيا المعلومات،
+    وتطبيق ما أتعلمه في مشاريع عملية تساعدني على النمو
+    واكتساب مهارات جديدة.
+  </p>
+</section>
+<section id="projects">
   <h2>مشاريعي</h2>
-  <p>هذا أول مشروع لي: موقعي الشخصي Portfolio.</p>
+  <div class="project">
+    <h3>موقعي الشخصي Portfolio</h3>
+    <p>
+      تصميم موقع شخصي باستخدام HTML وCSS لعرض السيرة الذاتية
+      والتعليم والمهارات والمشاريع بطريقة منظمة.
+    </p>
+  </div>
 </section>
 <section>
-  <h2>تواصل معي</h2>
-  <p>يمكنك التواصل معي للتعرف على مشاريعي وأعمالي.</p>
+  <h2>اهتماماتي</h2>
+  <p>البرمجة، تطوير المواقع، تعلم Python، وتطوير المهارات التقنية.</p>
 </section>
+<section id="contact">
+  <h2>تواصل معي</h2>
+  <p>يسعدني التواصل للتعرف على مشاريعي ومهاراتي.</p>
+  <a href="https://github.com/basamal646-sketch"
+     target="_blank">حسابي على GitHub</a>
+</section>
+</div>
+<footer>
+  <p>© 2026 بسملة عمرو | جميع الحقوق محفوظة</p>
+</footer>
 </body>
 </html>
